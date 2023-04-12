@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de comida</title>
+	<style>
+		iframe{
+			margin-left: 30%;
+
+		}
+		/* Estilos para el menú de navegación */
+		nav {
+			background-color: #0b1d83;
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+		}
+
+		nav a {
+			color: rgb(255, 153, 0);
+			font-size: 18px;
+			margin-right: 20px;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		/* Estilos para el contenido de la página */
+		.container {
+			margin: 20px auto;
+			max-width: 800px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		iframe{
+			margin-left: 50PX;
+		}
+		body{
+			background-attachment: fixed;
+    		background-size: 100%;
+   			 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),url(images/background.jpg);
+    		color:white;
+    		font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+
+		}
+		#mapa{
+			text-align: center;
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="index.html">Presentación</a>
+			<a href="menu.html">Menú</a>
+			<a href="sobre-nosotros.html">Sobre nosotros</a>
+			<a href="iniciar-sesion.html">Iniciar sesión</a>
+	</nav>
+	<div class="container">
+		<section id="sobre-nosotros">
+			<h1>Sobre nosotros</h1>
+			<p>Somos un restaurante familiar fundado en 1990, y desde entonces nos hemos dedicado a ofrecer a nuestros clientes los mejores platillos de la región. Nuestro objetivo es brindar una experiencia gastronómica inolvidable a todos los que nos visitan.</p>
+		</section>
+	</div>
+	<section id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6502.157458127793!2d-71.67353295417509!3d-35.42807969636425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c41f2b804f9f%3A0x4aef446b819b907d!2sUniversidad%20Santo%20Tom%C3%A1s!5e0!3m2!1ses!2scl!4v1681266345728!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+
+</body>
+</html>

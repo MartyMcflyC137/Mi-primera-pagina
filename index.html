@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de comida</title>
+	<style>
+		/* Estilos para el menú de navegación */
+		nav {
+			background-color: #0b1d83;
+			color: rgb(255, 255, 255);
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+		}
+
+		nav a {
+			color: rgb(255, 153, 0);
+			font-size: 18px;
+			margin-right: 20px;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		/* Estilos para el contenido de la página */
+		.container {
+			margin: 20px auto;
+			max-width: 800px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		body{
+			background-attachment: fixed;
+    		background-size: 100%;
+   			 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),url(images/background.jpg);
+    		color:white;
+    		font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+
+		#galeria {
+			margin-top: 50px;
+		}
+
+		.comida-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.comida-container img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 20px;
+			border: 2px solid #333;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+		}
+
+		.container {
+			margin: 20px auto;
+			max-width: 800px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		h2{
+			text-align: center;
+
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="index.html">Presentación</a>
+		<a href="menu.html">Menú</a>
+		<a href="sobre-nosotros.html">Sobre nosotros</a> 
+		<a href="iniciar-sesion.html">Iniciar sesión</a>
+	</nav>
+	<div class="container">
+		<section id="presentacion">
+			<h1>Bienvenidos a nuestra página de comida</h1>
+			<p>En nuestro restaurante ofrecemos una amplia variedad de platillos deliciosos preparados con los mejores ingredientes de la región. Ven a visitarnos y disfruta de una experiencia gastronómica inolvidable.</p>
+		</section>
+	</div>
+	<section id="galeria">
+		<h2>Nuestra especialidad</h2>
+		<div class="comida-container">
+			<img src="images/plato 1.jpg" alt="Comida 1">
+			<img src="images/plato2.jpg" alt="Comida 2">
+			<img src="images/plato 3.jpg" alt="Comida 3">
+			<img src="images/pollo4.jpg" alt="Comida 4">
+			<img src="images/plato 5.jpg" alt="Comida 5">
+			<img src="images/plato6.jpg" alt="Comida 6">
+		</div>
+	</section>
+</body>
+</html>
