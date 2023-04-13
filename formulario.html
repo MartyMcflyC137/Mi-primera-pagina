@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav img{
+			width: 100px;
+			margin-top: -16px;
+			float: left;
+
+		}
+
+        nav {
+			background-color: #0b1d83;
+			color: rgb(255, 255, 255);
+			display: flex;
+			justify-content: space-between;
+			padding-top: 20px;
+			
+		}
+
+        nav a {
+			color: rgb(255, 153, 0);
+			font-size: 18px;
+			margin-right: 20px;
+			text-decoration: none;
+		}
+
+        nav a:hover {
+			text-decoration: underline;
+		}
+    </style>
+</head>
+<body>
+    <nav>
+		<a href="formulario.html">Bienvenida</a>
+		<a href="index.html"><img src="images/logo.com.png" alt="logo"></a>
+		<a href="index.html">Presentación</a>
+		<a href="menu.html">Menú</a>
+		<a href="sobre-nosotros.html">Sobre nosotros</a> 
+		<a href="iniciar-sesion.html">Iniciar sesión</a>
+	</nav>
+    <form>
+		<label for="text">Introduce tu nombre :</label><br>
+		<input type="text" id="Dni" placeholder=""><br>
+		<label>mensaje :</label><br>
+		<input type="text"><br>
+		
+    <label for="">seleciona el color de tu icono:</label><br>
+
+        <input type="radio" name="transporte" value="1">Rojo
+
+<br>
+
+<input type="radio" name="transporte" value="2">Verde
+
+<br>
+
+<input type="radio" name="transporte" value="3">Azul
+<hr>
+<label for="">Seleciona los dias con disponibilidad:</label><br>
+<input type="checkbox" name="transporte" value="1">lunes
+<br>
+<input type="checkbox" name="transporte" value="1">martes
+<br>
+<input type="checkbox" name="transporte" value="1">miercoles
+<br>
+<input type="checkbox" name="transporte" value="1">jueves
+<br>
+<input type="checkbox" name="transporte" value="1">viernes
+<form method="get" action="">
+
+    <input type="submit" value="Enviar este formulario" />
+	</form>
+</body>
+</html>
