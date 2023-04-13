@@ -9,8 +9,7 @@
 			color: rgb(255, 255, 255);
 			display: flex;
 			justify-content: space-between;
-			padding: 10px;
-			
+			padding-top: 20px;
 		}
 
 		nav a {
@@ -65,10 +64,18 @@
 			margin: 0;
 		}
 
+		nav img{
+			width: 100px;
+			margin-top: -16px;
+			float: left;
+
+		}
+
 	</style>
 </head>
 <body>
 	<nav>
+		<a href="index.html"><img src="images/logo.com.png" alt="logo"></a>
 		<a href="index.html">Presentación</a>
 		<a href="menu.html">Menú</a>
 		<a href="sobre-nosotros.html">Sobre nosotros</a>
@@ -92,7 +99,11 @@
 	<h1>Formulario</h1>
 	<form>
 		<label for="Dni">Dni :</label><br>
-		<input type="number" id="Dni" placeholder="Pon tu nombre"> 
+		<input type="number" id="Dni" placeholder="Pide aqui el platillo"><br>
+		<label>Nombre :</label><br>
+		<input type="text"><br>
+		<label >password :</label><br>
+		<input type="password" ><br>
 	</form>
 </body>
 </html>

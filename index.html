@@ -9,7 +9,7 @@
 			color: rgb(255, 255, 255);
 			display: flex;
 			justify-content: space-between;
-			padding: 10px;
+			padding-top: 20px;
 		}
 
 		nav a {
@@ -67,7 +67,6 @@
 			height: 200px;
 			object-fit: cover;
 			margin-bottom: 20px;
-			border: 2px solid #333;
 			border-radius: 5px;
 			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 			
@@ -104,11 +103,28 @@
 			position: absolute;
 			margin-left: 15%;
 		}
-		
+
+		.comida-info{
+			border: 1px solid red;
+			margin-top: -20px;
+			margin-bottom: 20px;
+		}
+
+		.comida-item{
+			border: 1px solid red;
+		}
+
+		nav img{
+			width: 100px;
+			margin-top: -16px;
+			float: left;
+
+		}
 	</style>
 </head>
 <body>
 	<nav>
+		<a href="index.html"><img src="images/logo.com.png" alt="logo"></a>
 		<a href="index.html">Presentación</a>
 		<a href="menu.html">Menú</a>
 		<a href="sobre-nosotros.html">Sobre nosotros</a> 
@@ -128,13 +144,50 @@
 	<section id="galeria">
 		<h2>Nuestra especialidad</h2>
 		<div class="comida-container">
-			<img src="images/plato 1.jpg" alt="Comida 1">
-			<img src="images/plato2.jpg" alt="Comida 2">
-			<img src="images/plato 3.jpg" alt="Comida 3">
-			<img src="images/pollo4.jpg" alt="Comida 4">
-			<img src="images/plato 5.jpg" alt="Comida 5">
-			<img src="images/plato6.jpg" alt="Comida 6">
+			<div class="comida-item">
+				<img src="images/plato 1.jpg" alt="Comida 1">
+				<div class="comida-info">
+					<h3>Plato 1</h3>
+					<p>$10</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato2.jpg" alt="Comida 2">
+				<div class="comida-info">
+					<h3>Plato 2</h3>
+					<p>$12</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato 3.jpg" alt="Comida 3">
+				<div class="comida-info">
+					<h3>Plato 3</h3>
+					<p>$15</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/pollo4.jpg" alt="Comida 4">
+				<div class="comida-info">
+					<h3>Pollo 4</h3>
+					<p>$8</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato 5.jpg" alt="Comida 5">
+				<div class="comida-info">
+					<h3>Plato 5</h3>
+					<p>$11</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato6.jpg" alt="Comida 6">
+				<div class="comida-info">
+					<h3>Plato 6</h3>
+					<p>$14</p>
+				</div>
+			</div>
 		</div>
 	</section>
+	
 </body>
 </html>
