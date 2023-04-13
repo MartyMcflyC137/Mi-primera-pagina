@@ -3,10 +3,6 @@
 <head>
 	<title>Página de comida</title>
 	<style>
-		iframe{
-			margin-left: 30%;
-
-		}
 		/* Estilos para el menú de navegación */
 		nav {
 			background-color: #0b1d83;
@@ -14,7 +10,10 @@
 			display: flex;
 			justify-content: space-between;
 			padding-top: 20px;
+			
 		}
+		
+		/* Agustina Vuelva */
 
 		nav a {
 			color: rgb(255, 153, 0);
@@ -36,7 +35,7 @@
 
 		h1 {
 			font-size: 36px;
-			margin-bottom: 20px;
+			margin-bottom: 21px;
 		}
 
 		p {
@@ -45,21 +44,78 @@
 			margin-bottom: 20px;
 		}
 
-		iframe{
-			margin-left: 50PX;
-		}
 		body{
 			background-attachment: fixed;
     		background-size: 100%;
    			 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),url(images/background.jpg);
     		color:white;
-    		font-family: Arial, Helvetica, sans-serif;
+    		font-family: Arial, Helvetica, sans-serif;
 			margin: 0;
+		}
+
+		#galeria {
+			margin-top: 50px;
+			
+		}
+
+		.comida-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			
+		}
+
+		.comida-container img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			
+		}
+
+		.container {
+			margin: 20px auto;
+			max-width: 800px;
+			text-align: center;
+			padding: 55px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom:20px;
+		}
+
+		h2{
+			text-align: center;
 
 		}
-		#mapa{
-			text-align: center;
-			padding-top: 50px;
+
+		.table {
+			padding: 30px;
+			border: 1px solid rgb(212, 26, 26);
+			border-radius: 30px;
+			margin-top: 21%;
+			position: absolute;
+			margin-left: 15%;
+		}
+
+		.comida-info{
+			border: 1px solid red;
+			margin-top: -20px;
+			margin-bottom: 20px;
+		}
+
+		.comida-item{
+			border: 1px solid red;
+			border-radius: 20px;
 		}
 
 		nav img{
@@ -68,28 +124,74 @@
 			float: left;
 		
 		}
-		h2{
-			display: none;
-		}
 	</style>
 </head>
 <body>
 	<nav>
+		<a href="index.html"><img src="images/logo.com.png" alt="logo"></a>
 		<a href="formulario.html">Bienvenida</a>
-		<a href="index.html"><img src="images/logo.com.png" alt="logo" style="width: ; height: ; margin-left: ;"></a>
 		<a href="index.html">Presentación</a>
 		<a href="menu.html">Menú</a>
 		<a href="sobre-nosotros.html">Sobre nosotros</a> 
 		<a href="iniciar-sesion.html">Iniciar sesión</a>
 	</nav>
 	<div class="container">
-		<section id="sobre-nosotros">
-			<h1>Sobre nosotros</h1>
-			<p>Somos un restaurante familiar fundado en 1990, y desde entonces nos hemos dedicado a ofrecer a nuestros clientes los mejores platillos de la región. Nuestro objetivo es brindar una experiencia gastronómica inolvidable a todos los que nos visitan.</p>
+		<section id="presentacion">
+			<h1>¡Bienvenidos a nuestra página de comida gourmet!</h1>
+			<p>Aquí encontrarás una experiencia gastronómica única y deliciosa que satisfará tus sentidos. 
+				Sumérgete en un mundo de sabores exquisitos y platos innovadores, 
+				preparados con los ingredientes más frescos y de la mejor calidad. 
+				Nuestra pasión por la comida y la atención al detalle se reflejan en cada plato que ofrecemos. 
+				¡Esperamos que disfrutes de tu visita y vuelvas pronto para probar más de nuestras deliciosas creaciones culinarias!
+			</p>
 		</section>
 	</div>
-	<section id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6502.157458127793!2d-71.67353295417509!3d-35.42807969636425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c41f2b804f9f%3A0x4aef446b819b907d!2sUniversidad%20Santo%20Tom%C3%A1s!5e0!3m2!1ses!2scl!4v1681266345728!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<h2>.</h2>
+	<section id="galeria">
+		<h2>Nuestra especialidad</h2>
+		<div class="comida-container">
+			<div class="comida-item">
+				<img src="images/plato1.jpg" alt="Comida 1">
+				<div class="comida-info">
+					<h3>Plato 1</h3>
+					<p>15$</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato2.jpg" alt="Comida 2">
+				<div class="comida-info">
+					<h3>Plato 2</h3>
+					<p>19$</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato3.jpg" alt="Comida 3">
+				<div class="comida-info">
+					<h3>Plato 3</h3>
+					<p>$14</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/pollo4.jpg" alt="Comida 4">
+				<div class="comida-info">
+					<h3>Pollo 4</h3>
+					<p>12$</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato5.jpg" alt="Comida 5">
+				<div class="comida-info">
+					<h3>Plato 5</h3>
+					<p>$11</p>
+				</div>
+			</div>
+			<div class="comida-item">
+				<img src="images/plato6.jpg" alt="Comida 6">
+				<div class="comida-info">
+					<h3>Plato 6</h3>
+					<p>$14</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	
 </body>
